@@ -1,0 +1,72 @@
+.nav-enlace{
+    /*
+    Esta instrucción es para convertir los a en cajas y 
+    convertirlo en un elemento de linea
+
+    display: inline-block;
+
+    */
+    display: inline-block;
+    padding: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: aqua;
+}
+
+.nav-enlace:hover{
+    background-color: cadetblue;
+}
+
+.nav-enlace:active{
+    background-color: springgreen;
+}
+
+
+nav{
+    /*
+    Esta instrucción es para mostrar los a al final
+    justify-content: flex-end;
+
+    Esta instrucción es para mostrar el contenido de nav en linea
+    display: flex;
+    */
+    justify-content: flex-end;
+    background: grey;
+    padding: 15px;
+    display: flex;
+}
+
+.principal{
+
+    display: none;
+}
+
+
+/*
+Ahora vamos a ajustar los elementos por si se utiliza en dispossitivos moviles
+
+*/
+
+@media(max-width:600px){
+
+    /*
+    Esto es para colocar los elementos debajo de otro
+    flex-direction: column;
+    */
+    nav{
+        background-color: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        padding: 20px 20px;
+        margin: 20px;
+        
+    }
+    .principal{
+        display: inline-block;
+        color: black;
+        background-color: aquamarine;
+        border: 2px solid gold;
+    }
+}
